@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "2024_posit_conf.html#section",
+    "href": "2024_posit_conf.html#section",
+    "title": "2024_posit_conf",
+    "section": "",
+    "text": "And when I think about this now,\nit’s a really close parallel to my open-source journey.\n\nHow I found a need to make a change,\nHow not making a change would be detrimental to myself and those around me.\nHow terrifying it was to start something new.\n\nNow I’d like to share my open-source journey with you!\n\nIn hopes that it will help you along your journey.\n\nAnd to do that, I’ve lumped that journey into three buckets\nNEXT SLIDE"
+  },
+  {
+    "objectID": "2024_posit_conf.html#open-source-journey",
+    "href": "2024_posit_conf.html#open-source-journey",
+    "title": "2024_posit_conf",
+    "section": "Open-Source Journey",
+    "text": "Open-Source Journey\n\n\n\nOrganizations Thinking About Using Open-Source\n\n \n\n\nOrganizations Currently Implementing\n\n  \n\n\nOrganizations Been There, Done That, Have a T-Shirt\n\n \n\n\n\n\nOrganizations thinking about open-source.\nOrganizations currently using open-source.\nOrganizations that might think of this as old news. I’ve been there, done that, and have the t-shirt to prove it. NEXT SLIDE."
+  },
+  {
+    "objectID": "2024_posit_conf.html#organization",
+    "href": "2024_posit_conf.html#organization",
+    "title": "2024_posit_conf",
+    "section": "Organization?",
+    "text": "Organization?\n\n\n \n\n    \n\nVS.\n\n  \n\n  \n\n\n\nWHY ORGANIZATIONS:\n\nSome of you may be wondering why are you talking about organizations.\nI’m just a happy bucket, who likes to program.\n\nORGANIZATIONS ARE PEOPLE:\n\nWell, organizations are made up of people.\nThey’re made up of you.\n\nTHINK ORGANIZATIONALLY:\n\nI want everyone to think about this from the organizational perspective.\nAbout how your COMPANY can improve, by adopting open-source.\n\nBELIEVE:\n\nAnd I want you to believe, you have the ability to drive the use of open-source w/in your org.\n\nNEXT SLIDE"
+  },
+  {
+    "objectID": "2024_posit_conf.html#organizations-thinking-of-using-open-source",
+    "href": "2024_posit_conf.html#organizations-thinking-of-using-open-source",
+    "title": "2024_posit_conf",
+    "section": "Organizations Thinking of Using Open-Source",
+    "text": "Organizations Thinking of Using Open-Source\n\n\nSo,\nFor you\nas a driver of change, thinking about how you can get your organzation to use OS.\nNEXT SLIDE"
+  },
+  {
+    "objectID": "2024_posit_conf.html#questions-when-starting-out-in-os",
+    "href": "2024_posit_conf.html#questions-when-starting-out-in-os",
+    "title": "2024_posit_conf",
+    "section": "Questions when Starting Out in OS",
+    "text": "Questions when Starting Out in OS\n\n\nI love R/Python! But how can I gain support to use Open-Source in my everyday work?\nShould I grow an Open-Source team within my organiation? If so, how?\nWhere do I start? There are so many options!\n\n\n\nYou’ll have run into some questions to sort out?\nSpeak to each incremental bullet.\n\nThe best thing to do, is … NEXT SLIDE"
+  },
+  {
+    "objectID": "2024_posit_conf.html#section-1",
+    "href": "2024_posit_conf.html#section-1",
+    "title": "2024_posit_conf",
+    "section": "",
+    "text": "Just dive in!\n\n\nJust Dive In!\n\nI’ll share some of our story, of just diving in.\nTo help you avoid some of those rocks.\n\nNEXT SLIDE\n\n\nPhoto by Jeremy Bishop on Unsplash"
+  },
+  {
+    "objectID": "2024_posit_conf.html#our-story-of-just-diving-in",
+    "href": "2024_posit_conf.html#our-story-of-just-diving-in",
+    "title": "2024_posit_conf",
+    "section": "Our Story (of just diving in)",
+    "text": "Our Story (of just diving in)\n\n\nWhat did we need?\n\nShow value\nBuild credibility\nExpand the team\n\n\n\n\nHow did we do it?\n\nInteractivity is the Key\nFind Quick Wins\nExcel to Shiny\n“Borrow Code”\n\n\nPhoto by Calvin Hanson on Unsplash\n\n\n\nSo, what did we need to do…\nAnd how did we achieve this?\nWE NEEDED TO:\n\nShow value\nBuild credibility\nWe knew we needed more people, so we use that credibility to EXPAND THE TEAM\n\nHOW DID WE ACHIEVE THIS:\n\nInteractivity is the Key\nFind some quick wins\nMove Excel to Shiny\n“Borrow code”\nShiny galleries"
+  },
+  {
+    "objectID": "2024_posit_conf.html#example---most-frequently-reported-aes",
+    "href": "2024_posit_conf.html#example---most-frequently-reported-aes",
+    "title": "2024_posit_conf",
+    "section": "Example - Most Frequently Reported AEs",
+    "text": "Example - Most Frequently Reported AEs\nOld Way\n\n\nTOOK PROCESS USING EXCEL:\n\nidentify AE that exceeded some threshold\n\nPROCESS:\n\nOpen an output\nCopy the contents\nOpen excel\nPaste in content\nSlice and dice the data"
+  },
+  {
+    "objectID": "2024_posit_conf.html#example---most-frequently-reported-aes-1",
+    "href": "2024_posit_conf.html#example---most-frequently-reported-aes-1",
+    "title": "2024_posit_conf",
+    "section": "Example - Most Frequently Reported AEs",
+    "text": "Example - Most Frequently Reported AEs\nNew Way\n\n\nOUR NEW WAY:\n\nis nothing wild\n\nPROCESS:\n\nInstead of opening output or excel, you OPEN SHINY APP\nBrowse to files\nLoad the files\nSlice and dice the data\n\nNEXT SLIDE"
+  },
+  {
+    "objectID": "2024_posit_conf.html#benefits-of-shift-to-shiny",
+    "href": "2024_posit_conf.html#benefits-of-shift-to-shiny",
+    "title": "2024_posit_conf",
+    "section": "Benefits of Shift to Shiny",
+    "text": "Benefits of Shift to Shiny\n\n\n\n\n\n\nEasier to use\nReduced errors\nFaster and higher quality results\nSaving $250k/year!\n\n\n\n\n\nSo what were the benefits?\n\nEasier to use.\nReduced errors (copy/paste and accidental modifications).\nFaster and higher quality.\nSaving $250k/year!\n\nSALARY SAVED:\n\nThat’s more than I make a year.\nSo, not too bad for a few weeks of work!\n\nSHOW VALUE, QUICKLY:\n\nWe were able to show value, quickly\nand pose the question\n\nQUESTIONS:\n\nWhat if we have two people doing this?\nWhat about three?\nWhat can we achieve if we invest resources here?\n\nNEXT SLIDE"
+  },
+  {
+    "objectID": "2024_posit_conf.html#implementing-within-your-organization",
+    "href": "2024_posit_conf.html#implementing-within-your-organization",
+    "title": "2024_posit_conf",
+    "section": "Implementing within Your Organization",
+    "text": "Implementing within Your Organization\n\n\nTEAM USING OS:\n\nSo you have a team, using OS to deliver value\n\nSPEAD USE OF OS:\n\nEventually, this could expand to how do we spread the use of OS more broadly?\nHow could we have a department, adopt the use of OS?\n\nNEXT SLIDE"
+  },
+  {
+    "objectID": "2024_posit_conf.html#its-not-what-you-do-but-how-you-do-it",
+    "href": "2024_posit_conf.html#its-not-what-you-do-but-how-you-do-it",
+    "title": "2024_posit_conf",
+    "section": "It’s Not What You Do, but How You Do It!",
+    "text": "It’s Not What You Do, but How You Do It!\nRegulatory Deliverables\n\n\n\n\n\n\n\nAre your results reproducible?\nAre people using trusted software?\nIs this getting treatments to patients in need faster?\n\n\n\n\n\nWHEN YOU GET HERE:\n\nIt’s not what you’re doing,\nbut how you’re doing it.\n\nEspecially when thinking about Regulatory deliverables.\nBUILD HOUSE:\n\nSure, we can go build a house\nbut when it’s done, and you step back and take a look at it\nif it looks like this\nyou’re probably not going to want to live in that house.\n\nQUESTIONS YOU RUN INTO:\n\nINCREMENT SLIDE UP: Is it reproducible?\nINCREMENT SLIDE UP: Are people using trusted software?\nINCREMENT SLIDE UP: Are you taking full advantage of OS’s capabilities to get treatments to patients faster?\n\nNEXT SLIDE"
+  },
+  {
+    "objectID": "2024_posit_conf.html#how-we-built-our-house",
+    "href": "2024_posit_conf.html#how-we-built-our-house",
+    "title": "2024_posit_conf",
+    "section": "How We Built Our House",
+    "text": "How We Built Our House\n\n\n\nGeneral Contractor\n Modernization of Statistical Analytics\n\n\nSub-Contractors\n  R Validation Hub\n\n\nHome Inspection\n  Regulatory Submissions WG\n\n\n\nSo, how did we build our house.\nGENERAL CONTRACTOR:\n\nIf you know nothing about building a house.\nHaving a general contractor is important.\n\nROLES:\nThey understand you need a:\n\nplumber,\nelectrician,\npainter, etc.\n\nORDER & LANGUAGE OF THE TRADE:\n\nThey understand the order things need to occur.\nThey understand the language of each trade.\nCommunicating effectively across the roles.\n\nMODERNIZATION OF STATISTICAL ANALYTICS\n\nThe modernization of statistical analysis working group plays this role as a general contractor.\nNow there not going to build your house for you,\nbut they can teach you what roles need to be involved,\nthe language of each trade,\nso you can effectively drive the building of your home.\n\nSUB-CONTRACTORS:\nGENERAL CONTRACTORS ARE NOT PLUMBERS:\n\nGeneral contractors aren’t plumbers, they aren’t electricians.\nBut they know a lot of them,\nAnd they know who does good work!\n\nSELECTING SOFTWARE:\n\nAnd this is how you can think about selecting software,\nAnd the R Validation Hub, which is a working group w/in the R Consortium, is leading the way here.\nWhen you pick an electrician,\nYou want one who is going to check that\nthe light they installed, turns on when you flip the switch.\n\nR VALIDATION HUB:\n\nThe R Validation Hub will guide you in how to pick the right software…\nAnd how to document that, correctly.\n\nTHE HOUSE IS BUILT! LET’S MOVE IN:\n\nNo, we need to make sure it’s safe\nAnd it’s effective at being a house.\nLittle bit of a stretch there, but we’ll make it work :)\n\nREGULATORY AGENCIES:\n\nThis is no different than us submitting to regulatory agencies.\nAnd the R Consortium has another working group, around submissions,\nTo guide you in correctly submitting to agencies,\nWhile using open-source.\n\nTRANSITION:\n\nAnd this is how we built our house.\n\nWe leaned on the open-source community,\n\nWe joined open-source initiatives,\nWe learned from the industry, to overcome challenges.\n\nWHY WE BUILT A NEW HOUSE IN THE FIRST PLACE:\n\nYou already had a house.\nWe need to get treatments to patient in need faster.\n\nNEXT SLIDE"
+  },
+  {
+    "objectID": "2024_posit_conf.html#faster-to-patients",
+    "href": "2024_posit_conf.html#faster-to-patients",
+    "title": "2024_posit_conf",
+    "section": "Faster to Patients",
+    "text": "Faster to Patients\n\n\n\nStandards\n\n\n\n\n\n\n\nInteractivity\n\n\n\n\nNo surprise, standards are key to improving efficiency.\nPHARMAVERSE:\n\ngroup of people, working to curate packages, specific to pharma\naim to standarize the set of packages regulatory reviewers receive\nreviewers see different, and even proprietary packages each review, opposite of our goal to speed things up\nreviewers continue to see the same set of packages, build trust in packages\nthis will help us save time\n\nTRANSITION:\n\nGoing past packages, if we go another step foward\nWorry less about how results are formatted on a page, and more about results NEXT SLIDE\n\nCARDINAL:\n\n“table-generating functions to implement standard FDA Safety Tables”\nReuse code to generate results at an industry level (where you can)\n\nTRANSITION:\n\nSo, standards can bring efficiencies.\nInteractivity can too. NEXT SLIDE\n\nINTERACTIVITY:\n\nInteractive frameworks, like teal, rhino, and golem, provide a standard way to give interactivity to your stakeholders.\nThis, allows them to answer questions in real time.\nHelping to more quickly understand and summarize their findings."
+  },
+  {
+    "objectID": "2024_posit_conf.html#been-there-done-that-got-the-t-shirt",
+    "href": "2024_posit_conf.html#been-there-done-that-got-the-t-shirt",
+    "title": "2024_posit_conf",
+    "section": "Been There, Done That, Got the T-Shirt",
+    "text": "Been There, Done That, Got the T-Shirt\n\n\nA jocular, sarcastic, or condescending expression of familiarity or boredom with a certain situation or thing.\n\n\n\nBeen there, done that got the T-shirt\n\n\nYOU’VE BUILT AN OS TEAM\nYOU’VE EXPANDED THE SCOPE OF USE FOR OS TO DEPARTMENTS:\n\nand successfully used for submission\n\nYOU MIGHT THINK:\n\nI’ve been there done that and I have the t-shirt\nWhen I talk to organizations that you woulld think fall in this bucket,\nthey don’t think they have the t-shirt yet"
+  },
+  {
+    "objectID": "2024_posit_conf.html#there-is-a-lot-left-to-do",
+    "href": "2024_posit_conf.html#there-is-a-lot-left-to-do",
+    "title": "2024_posit_conf",
+    "section": "There is a lot LEFT to do!",
+    "text": "There is a lot LEFT to do!\nPeople and New Technology\n\n\n\n\n\n\n\n\nCHANGE MANAGEMENT:\n\nJUST BECAUSE YOU HAVE THE HOUSE\nDOESN’T MEAN ANYONE IS GOING TO MOVE IN\n\nMARKS PRESENTATION:\n\nHow to bring your people with you\n\nNEW TECHNOLOGY / ERIKS TALK:\n\nWebAssembly\nNeed to stay up to date with new technology\nAs ways to simplify, remove roadblocks\nwe face as an industry."
+  },
+  {
+    "objectID": "2024_posit_conf.html#there-is-a-lot-left-to-do-1",
+    "href": "2024_posit_conf.html#there-is-a-lot-left-to-do-1",
+    "title": "2024_posit_conf",
+    "section": "There is a lot LEFT to do!",
+    "text": "There is a lot LEFT to do!\nKeep R Sustainable\n\n\n\nContribute to Your Package Pipeline\n\n\n\n\nContribute to Core R\n\n\n\n\nJoin the R Consortium\n\n\n\n\n\nContribute to Your Package Pipeline:\n\nStory about logrx\n\nContribute to Core R:\n\nCheck out STRENGTHNING THE R ECOSYSTEM this afternoon\nIncluding Heather Turners Talk about Contributing to the R Project\n\nJoin the R Consortium:\n\nInsure infrastructure remains stable.\nSet the industry up for long-term success!"
+  },
+  {
+    "objectID": "2024_posit_conf.html#there-is-a-lot-left-to-do-2",
+    "href": "2024_posit_conf.html#there-is-a-lot-left-to-do-2",
+    "title": "2024_posit_conf",
+    "section": "There is a lot LEFT to do!",
+    "text": "There is a lot LEFT to do!\nGrow R\n\n\n\nShare Your Story\n\n\n\n\nShare Your Story\n\n\n\n\nShare Your Story\n\n\n\n\nBecome an Advocate\n\n\n\n\nOrganize & Lead\n\n\n\n\n\nOrganize & Lead\n\n\n\n\n\nSHARE YOUR STORY:\n\nLike at Posit Conf\n\nOr more informally at\n\nData Science Hangout\nPharmaverse Blog\n\n\nBECOME AN ADVOCATE:\n\ngrowing users of your package pipeline helps ensure long-term stability\n\nORGANIZE & LEAD:\n\nIf you see a gap or roadblock not addressed at industry level, create a group to sort this out!\n\nR Consortium - WG Guidance\nPHUSE:\n\nOS Working group, overseeing OS projects\nNew Project Form"
+  },
+  {
+    "objectID": "2024_posit_conf.html#section-3",
+    "href": "2024_posit_conf.html#section-3",
+    "title": "2024_posit_conf",
+    "section": "",
+    "text": "“Failure isn’t fatal, but failure to change might be”  - John Wooden\n\n\nBy Unidentified (Southern Campus is the UCLA yearbook published by UCLA) - 1958 UCLA yearbook, p. 314, PD-US, Link\n\n\nSo the end of the story, I’m still waking up at 5 am and working out, for clsoe to a year now.\nMy blood-pressure is way down and I’m in great health.\nAnd the analogy seems stronger than ever, you have to change in order to survive.\nSo I hope you find a reason to make a change,\nJust dive in,\nbecome a leader in moving your organization to Open-Source,\nremembering there are many people to help you along your journey,\nand remembering to be good stewards of Open-Source\nto maintain stability and ensure success, as our industry\nadopts Open-Source to get treatments\nto patients in need, in time.\nThank you."
+  }
+]

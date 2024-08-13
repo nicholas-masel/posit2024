@@ -1,5 +1,7 @@
 project:
   title: "2024_posit_conf"
+  type: website
+  output-dir: docs
 
 editor: visual
 
