@@ -761,6 +761,10 @@ NEW TECHNOLOGY / ERIKS TALK:
 :::
 
 ::: notes
+Now that R has become a key part of your pipeline.
+
+We want to make sure R stays sustainable.
+
 Contribute to Your Package Pipeline:
 
 -   Story about logrx
@@ -772,8 +776,9 @@ Contribute to Core R:
 
 Join the R Consortium:
 
--   Insure infrastructure remains stable.
--   Set the industry up for long-term success!
+-   Basically the R Consortium supports social and infrastructure projects.
+-   To spread the use of R and to fund projects to keep infrastructure stable.
+-   This helps to set up our industry for long-term success!
 :::
 
 <!-- ## There is a lot [LEFT]{style="color:red;"} to do! -->
@@ -801,16 +806,14 @@ Join the R Consortium:
 ![](presentation_files/pharmaverseblog.png){width="400" height="400"}
 :::
 
-::: {.fragment .fade-in-then-out style="text-align: center"}
-### Become an Advocate
+<!-- ::: {.fragment .fade-in-then-out style="text-align: center"} -->
+<!-- ### Become an Advocate -->
 
-![](presentation_files/advocate.png){width="400" height="450"}
-:::
+<!-- ![](presentation_files/advocate.png){width="400" height="450"} -->
+<!-- ::: -->
 
 ::: {.fragment .fade-in-then-out style="text-align: center"}
 ### Organize & Lead
-
-<!-- ![](presentation_files/RConsortium_Vertical_Pantone.png){width="400" height="400"} -->
 
 ![](presentation_files/rconsortium_wg.png){width="750" height="400"}
 :::
@@ -825,16 +828,18 @@ Join the R Consortium:
 :::
 
 ::: notes
+We don't just want to sustain R, we also want to grow it!
+
 SHARE YOUR STORY:
 
--   Like at Posit Conf\
--   Or more informally at
-    -   Data Science Hangout
+-   Like at Posit Conf
+-   Or if you like something a little more informal:
+    -   Rachel Dempsy runs the Data Science Hangout each week
     -   Pharmaverse Blog
 
-BECOME AN ADVOCATE:
+<!-- BECOME AN ADVOCATE: -->
 
--   growing users of your package pipeline helps ensure long-term stability
+<!-- -   growing users of your package pipeline helps ensure long-term stability -->
 
 ORGANIZE & LEAD:
 
@@ -844,51 +849,10 @@ R Consortium - WG Guidance
 
 PHUSE:
 
+-   PHUSE is another,  they have been around, supporting the pharma industry
 -   OS Working group, overseeing OS projects
 -   New Project Form
 :::
-
-<!-- ::: notes -->
-
-<!-- -   Transition Story: It was a hectic day, one of those days when you have a calendar full of tasks to work on, but emails with urgent fires are popping up everywhere. It happened to be captured on video, let's show the clip. -->
-
-<!-- ::: -->
-
-<!-- ------------------------------------------------------------------------ -->
-
-<!-- {{< video https://www.youtube.com/watch?v=L6a725y0l-0?start=9&end=15 width="100%" height="85%">}} -->
-
-<!-- ::: notes -->
-
-<!-- -   Continue Story: So I'm going through email after email, problem after problem, and get one from my boss at the time. Hey, Nick, the R Consortium Infrastucture Steering Committee has an opening. They're taking applications, here's a link if you want to apply. -->
-
-<!-- -   I think, well that's ridiculous and move on to the next fire. Later that day, I'm exhausted, covered in proverbial ash and smelling of smoke, catch my breadth from the flurry of activity and think back to my bosses proposal. -->
-
-<!-- -   I love to do research, on like, anything. Buying a bike, I'm going to research. A golf bag, research. Shoes, research. My wife picks on me saying I enjoy the research more than actually using the thing I purchase.\ -->
-
-<!-- -   So I begin my research. What does it mean to be an R Consortium ISC member. I'm reading charters, by-laws, looking at what they fund, why do they exist, who pays for all of this. -->
-
-<!-- -   At the end of this, I still think it's ridiculous for me to apply, but why not, I'll go for it. -->
-
-<!-- -   I complete the application, and I nervously submit. -->
-
-<!-- -   A few days or weeks later, sure enough, the stuff of triumph and of nightmares, I was selected. -->
-
-<!-- -   I'm instantly full on imposter syndrome. -->
-
-<!-- -   Leading up to the first meeting, was a lot like my BP chart before. Each day leading up to the event, I can feel the anxiety grow. -->
-
-<!-- -   My BP spiking as I join the first meeting and see Hadley Wickham sitting there. What have I gotten myself into? -->
-
-<!-- -   I pushed through that meeting, and continued on working with the team and it's just another thing on the calendar, like when it's time to go to the gym. It's not met with anxiety or BP spikes :) -->
-
-<!-- -   And I tell you this, for the same reason anyone tells a story about imposter syndrome, you really can do this! And even if you've heard this before, it's always worth hearing again, to remind you. -->
-
-<!-- -   So I urge you to dive-in, fail alot, become a leader in moving yourself and/or your organization to Open-Source, while remembering to be a good steward in order to maintain stability and success as our industries shifts technologies. -->
-
-<!-- make a move, whichever bucket you might fall in.  Just as ignoring your elevated BP is a recipe for disaster, ignoring the open-source shift in our industry will lead to similar results.  -->
-
-<!-- ::: -->
 
 ------------------------------------------------------------------------
 
@@ -903,11 +867,13 @@ By Unidentified (Southern Campus is the UCLA yearbook published by UCLA) - 1958 
 :::
 
 ::: notes
-So the end of the story, I'm still waking up at 5 am and working out, for clsoe to a year now.
+Now, to end my story around my blood-pressure and this crazy gym.
+
+I'm still waking up at 5 am and working out, for clsoe to a year now.
 
 My blood-pressure is way down and I'm in great health.
 
-And the analogy seems stronger than ever, you have to change in order to survive.
+And the analogy seems stronger than ever, you have to change in order to survive and thrive.
 
 So I hope you find a reason to make a change,
 
