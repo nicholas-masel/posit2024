@@ -927,3 +927,17 @@ to patients in need, in time.
 
 Thank you.
 :::
+
+## Thank You
+
+::: columns
+::: {.column width="50%"}
+### Presentation
+![](presentation_files/presentation_qr.png){width="400" height="400"}
+:::
+
+::: {.column width="50%"}
+### Supplemental Material
+![](presentation_files/supplemental_qr.png){width="400" height="400"}
+:::
+:::
