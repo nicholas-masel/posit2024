@@ -1,0 +1,47 @@
+---
+title: "Supplemental Material"
+format: html
+---
+
+## Getting Started
+
+Inspiration: [Shiny Gallery](https://shiny.posit.co/r/gallery/)
+
+Code I Started From: [bs4Dash - Thank you David Granjon!](https://github.com/RinteRface/bs4Dash/blob/master/inst/examples/showcase/app.R)
+
+More Info on My First App: [2020 PHUSE US Connect Paper](https://www.lexjansen.com/phuse-us/2020/dv/DV06.pdf)
+
+
+# Current User or Implementing at Scale w/in Your Organization
+
+-   SCE! Odds are, you are already doing your work w/out OS. Build environment to support hybrid workflow (proprietary & OS). Support transition from old to new.
+<!-- <!-- -   Answer the Statistical Compute Environment (SCE) question ([TransCelerate MoA](https://www.transceleratebiopharmainc.com/assets/modernization-of-statistical-analytics-solutions/), [SCE White Paper]()) --> -->
+
+## Validation
+
+https://www.pharmar.org/
+
+## Standards
+
+https://pharmaverse.org/ 
+https://github.com/pharmaverse/cardinal
+https://www.regulations.gov/document/FDA-2022-N-1961-0046 
+
+## Submissions
+
+https://rconsortium.github.io/submissions-wg/ 
+
+## Contribute to Core R
+
+https://contributor.r-project.org/
+https://www.r-project.org/foundation/donors.html
+
+## Join R Consortium
+
+https://www.r-consortium.org/about/join
+
+## Share Your Story
+
+https://posit.co/data-science-hangout/
+https://github.com/pharmaverse/blog
+

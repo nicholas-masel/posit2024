@@ -1,0 +1,927 @@
+---
+format:
+  revealjs: 
+    theme: solarized
+    auto-play-media: true
+logo: logo75.svg
+include-in-header:
+  - text: |
+      <style>
+      .reveal .slide-logo {
+        max-height: unset;
+        height: 75px;
+      }
+      </style>
+---
+
+# Open-Source Initiatives in Pharma {.center}
+
+<center>
+
+What's Out There & Why You Should Join
+
+Nicholas Masel
+
+</center>
+
+::: notes
+<!-- DON'T SAY THIS, BUT THIS IS BASICALLY IT - START -->
+
+<!-- My experience turning 40 and needing to go to the gym is alot like my open-source journey. I knew I needed to make a change, but I didn't know how to go about doing it. -->
+
+<!-- DON'T SAY THIS, BUT THIS IS BASICALLY IT - END -->
+
+I recently turned 40
+
+and this is the age where I hear from people with experience saying things like,
+
+I tweaked my back, getting out of the car or
+
+no, I can't eat that, it has too much cholesterol.
+
+
+So now that I've joined this group, I set an appointment for a check-up with my doctor.
+
+When I showed up, I found that I have white-coat syndrome.
+
+And that means every time I think about my BP, it goes up!
+:::
+
+------------------------------------------------------------------------
+
+```{r}
+#| echo: false
+
+# Libraries
+library(ggplot2)
+library(hrbrthemes)
+
+# create data
+xValue <- 1:9
+yValue <- c(130, 132, 135, 140, 135, 148, 158, 172, 190)
+
+sys_data <- data.frame(xValue,yValue)
+sys_data$cat <- "Systolic"
+
+yValue <- c(80,80,80,90,85,80,80,100,120)
+dia_data <- data.frame(xValue,yValue)
+dia_data$cat <- "Diastolic"
+
+data <- rbind(sys_data, dia_data)
+names(data) <- c("time", "bp", "cat")
+data$cat <- factor(data$cat, levels=c('Systolic', 'Diastolic'))
+
+ggplot(data, aes(x=time, y=bp, color = cat))  +
+  geom_line(size=2, alpha=0.9, linetype=2) +
+  scale_color_manual(values=c("#c794e3", "#69b3a2")) +
+  scale_y_continuous(breaks = c(80, 100, 120, 140)) +
+  theme_ipsum(axis_title_size = 12) +
+  ggtitle("My Blood Pressure") + 
+  labs(x = "Time spent thinking about my BP (min)", y = "BP (mmHg)") + 
+  scale_x_continuous(breaks = c(2, 4, 6, 8)) +
+  theme(legend.title=element_blank())
+```
+
+::: notes
+<!-- No, these aren’t my actual numbers,  -->
+
+<!-- but it makes for nice plot. -->
+
+So the next day, I’m chatting about this with some friends 
+
+and one of my buddies insists I go to the gym with him, 
+
+he’ll pick me up at 5 am!
+
+He says it very casually, like it’s a normal time to be awake and to be working out.
+
+But I’ve got to do something, so I agree.
+
+5 am comes quickly, 
+
+I jump in his truck and we’re off.
+
+Now, I’ve never worked out in a gym in my life, so I don’t know what to expect.
+
+We open the door and this was my experience. SHOW CRAZY VIDEO
+:::
+
+##  {background-video="presentation_files/gym_hook.mp4" background-video-loop="true" background-video-muted="true" background-size="contain"}
+
+::: notes
+<!-- I can’t turn around and leave, since I rode with a friend,  -->
+
+<!-- so continue on, and try to not seem too out of place. -->
+
+And when I think about this now, 
+
+it's a really close parallel to my open-source journey.
+
+-  How I found a need to make a change,
+
+-  How not making a change would be detrimental to myself and those around me.
+
+-  How terrifying it was to start something new.
+
+
+Now I'd like to share my open-source journey with you!
+
+-  In hopes that it will help you along your journey.
+
+And to do that,  I've lumped that journey into three buckets
+
+NEXT SLIDE
+:::
+
+## Open-Source Journey
+
+::: columns
+::: {.column width="33%" .fragment}
+<center>**Organizations** Thinking About Using Open-Source</center>
+
+<br> ![](presentation_files/bucket_1.png)
+:::
+
+::: {.column width="33%" .fragment}
+<center>**Organizations** Currently Implementing</center>
+
+<br> <br> ![](presentation_files/bucket_2.png)
+:::
+
+::: {.column width="33%" .fragment}
+<center>**Organizations** Been There, Done That, Have a T-Shirt</center>
+
+<br> ![](presentation_files/bucket_3.png)
+:::
+:::
+
+::: notes
+-   Organizations thinking about open-source.
+-   Organizations currently using open-source.
+-   Organizations that might think of this as old news. I've been there, done that, and have the t-shirt to prove it.
+NEXT SLIDE.
+:::
+
+## Organization?
+
+::: columns
+
+::: {.column width="40%" .center}
+<br>
+![](presentation_files/org.png)
+:::
+
+::: {.column width="20%"}
+<br>
+<br>
+<br>
+<br>
+<br>
+<center> **VS.** </center>
+<br>
+<br>
+<br>
+:::
+
+::: {.column width="40%" .center}
+<br>
+<br>
+![](presentation_files/bucket_1.png)
+:::
+:::
+
+::: notes
+
+WHY ORGANIZATIONS:
+
+- Some of you may be wondering why are you talking about organizations.
+- I'm just a happy bucket, who likes to program.
+
+ORGANIZATIONS ARE PEOPLE:
+
+- Well, organizations are made up of people.
+- They're made up of you.
+
+THINK ORGANIZATIONALLY:
+
+- I want everyone to think about this from the organizational perspective.
+- About how your COMPANY can improve, by adopting open-source.
+
+BELIEVE:
+
+- And I want you to believe, you have the ability to drive the use of open-source w/in your org.
+
+NEXT SLIDE
+:::
+
+```{css}
+.reveal .slide-logo {
+  z-index: -999 !important;
+}
+
+.center-xy {
+          margin: 0;
+          position: absolute;
+          top: 33%;
+          left: 59%;
+          -ms-transform: translateY(-50%), translateX(-50%);
+          transform: translateY(-50%), translateX(-50%);
+          font-size: 80px;
+          font-weight: bold;
+          text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black; 
+        }
+```
+
+## Organizations Thinking of Using Open-Source
+
+![](presentation_files/bucket_1.png)
+
+::: notes
+So,
+
+For you 
+
+as a driver of change, thinking about how you can get your organzation to use OS.
+
+NEXT SLIDE
+:::
+
+## Questions when Starting Out in OS
+::: {.column .incremental width="100%"}
+-   I love R/Python! But how can I gain support to use Open-Source in my everyday work? 
+
+-   Should I grow an Open-Source team within my organiation?  If so, how?
+
+-   Where do I start? There are so many options!
+:::
+
+::: notes
+
+You'll have run into some questions to sort out? 
+
+Speak to each incremental bullet.
+
+<!-- TRANSITION: I faced these questions at some point too. -->
+
+The best thing to do, is ... NEXT SLIDE
+:::
+
+##  {background-color="black" background-image="presentation_files/jeremy-bishop-Q5ZjqF6Wd3k-unsplash.jpg" background-size="cover" background-opacity="0.9"}
+
+::: center-xy
+Just dive in!
+:::
+
+::: notes
+Just Dive In!
+
+- I'll share some of our story, of just diving in.
+- To help you avoid some of those rocks.
+
+NEXT SLIDE
+:::
+
+::: footer
+Photo by <a href="https://unsplash.com/@jeremybishop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Bishop</a> on <a href="https://unsplash.com/photos/time-lapse-photography-of-man-jumping-on-waterfalls-Q5ZjqF6Wd3k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+:::
+
+## Our Story (of just diving in)
+
+::: columns
+::: {.column .incremental width="35%"}
+### What did we need?
+
+-   Show value
+
+-   Build credibility
+
+-   Expand the team
+:::
+
+::: {.column width="30%"}
+![](presentation_files/calvin-hanson-akR7Rnq-TGQ-unsplash.jpg)
+:::
+
+::: {.column .incremental width="35%"}
+### How did we do it?
+
+-   Interactivity is the Key
+
+-   Find Quick Wins
+
+-   Excel to Shiny
+
+-   "Borrow Code"
+:::
+
+::: footer
+Photo by <a href="https://unsplash.com/@calvinhanson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Calvin Hanson</a> on <a href="https://unsplash.com/photos/silver-steel-door-handle-bar-akR7Rnq-TGQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+:::
+:::
+
+::: notes
+So, what did we need to do...
+
+And how did we achieve this?
+
+WE NEEDED TO:
+
+-   Show value
+
+-   Build credibility
+
+-   We knew we needed more people, so we use that credibility to EXPAND THE TEAM
+
+HOW DID WE ACHIEVE THIS:
+
+-   Interactivity is the Key
+
+-   Find some quick wins
+
+-   Move Excel to Shiny
+
+-   "Borrow code"
+
+   - Shiny galleries
+:::
+
+## Example - Most Frequently Reported AEs
+
+### Old Way
+
+![](presentation_files/rmw_data_vis_old.png){.r-stretch}
+
+::: notes
+TOOK PROCESS USING EXCEL:
+
+-  identify AE that exceeded some threshold
+
+PROCESS:
+
+-  Open an output
+-  Copy the contents
+-  Open excel
+-  Paste in content
+-  Slice and dice the data
+:::
+
+## Example - Most Frequently Reported AEs
+
+### New Way
+
+![](presentation_files/rmw_data_vis.png){.r-stretch}
+
+::: notes
+OUR NEW WAY:
+
+-  is nothing wild
+
+PROCESS:
+
+-  Instead of opening output or excel, you OPEN SHINY APP
+-  Browse to files
+-  Load the files
+-  Slice and dice the data
+
+NEXT SLIDE
+:::
+
+## Benefits of Shift to Shiny
+
+::: columns
+::: {.column width="50%"}
+![](presentation_files/rmw_benefits.png)
+:::
+
+::: {.column width="50%" .fragment}
+<br>
+
+-  Easier to use
+
+-  Reduced errors
+
+-  Faster and higher quality results
+
+-  Saving $250k/year!
+
+<br>
+
+:::
+:::
+
+::: notes
+So what were the benefits?
+
+-  Easier to use.
+
+-  Reduced errors (copy/paste and accidental modifications).
+
+-  Faster and higher quality.
+
+-  Saving $250k/year!
+
+SALARY SAVED:
+
+-  That's more than I make a year.
+-  So, not too bad for a few weeks of work!
+
+SHOW VALUE, QUICKLY:
+
+- We were able to show value, quickly
+
+- and pose the question
+
+QUESTIONS:
+
+-  What if we have two people doing this?
+
+-  What about three?
+
+-  What can we achieve if we invest resources here?
+
+NEXT SLIDE
+:::
+
+
+## Implementing within Your Organization
+
+![](presentation_files/bucket_2.png)
+
+::: notes
+TEAM USING OS:
+
+-  So you have a team, using OS to deliver value
+
+SPEAD USE OF OS:
+
+-  Eventually, this could expand to how do we spread the use of OS more broadly?
+-  How could we have a department, adopt the use of OS?
+
+NEXT SLIDE
+:::
+
+```{=html}
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+<style>
+.flushleft {
+   text-align: left;
+}
+</style>
+<style>
+.flushcenter {
+   text-align: center;
+}
+</style>
+```
+
+## It's Not What You Do, but How You Do It!
+### Regulatory Deliverables
+
+::: columns
+::: {.column width="50%"}
+![](presentation_files/house.png)
+:::
+
+::: {.column .incremental .center width="50%"}
+
+<!-- -   **Regulatory Deliverables** -->
+
+<br>
+
+-   Are your results reproducible?
+
+-   Are people using trusted software?
+
+-   Is this getting treatments to patients in need faster?
+
+<br>
+
+:::
+:::
+
+::: notes
+WHEN YOU GET HERE:
+
+- It's not what you're doing, 
+- but how you're doing it.
+
+Especially when thinking about Regulatory deliverables.
+
+BUILD HOUSE:
+
+- Sure, we can go build a house
+- but when it's done, and you step back and take a look at it
+- if it looks like this
+- you're probably not going to want to live in that house.
+
+QUESTIONS YOU RUN INTO:
+
+- INCREMENT SLIDE UP: Is it reproducible?
+- INCREMENT SLIDE UP: Are people using trusted software?
+- INCREMENT SLIDE UP: Are you taking full advantage of OS's capabilities to get treatments to patients faster?
+
+NEXT SLIDE
+:::
+
+## How We Built Our House
+::: columns
+::: {.column width="33%" .fragment}
+### General Contractor
+![](presentation_files/Moa.png)
+Modernization of Statistical Analytics
+:::
+
+::: {.column width="33%" .fragment}
+### Sub-Contractors
+![](presentation_files/RConsortium_Vertical_Pantone.png)
+<br><br><br>
+R Validation Hub
+:::
+
+::: {.column width="33%" .fragment}
+### Home Inspection
+![](presentation_files/RConsortium_Vertical_Pantone.png)
+<br><br><br>
+Regulatory Submissions WG
+:::
+:::
+
+::: notes
+So, how did we build our house.
+
+
+GENERAL CONTRACTOR:  
+
+- If you know nothing about building a house.
+
+- Having a general contractor is important.
+
+ROLES:
+
+They understand you need a:
+
+- plumber, 
+- electrician, 
+- painter, etc.
+
+ORDER & LANGUAGE OF THE TRADE:  
+
+- They understand the order things need to occur.
+
+- They understand the language of each trade.  
+
+-  Communicating effectively across the roles.
+
+MODERNIZATION OF STATISTICAL ANALYTICS
+
+- The modernization of statistical analysis working group plays this role as a general contractor.
+
+- Now there not going to build your house for you,
+
+- but they can teach you what roles need to be involved,
+
+- the language of each trade,
+
+- so you can effectively drive the building of your home.
+
+
+SUB-CONTRACTORS:
+
+GENERAL CONTRACTORS ARE NOT PLUMBERS:
+
+- General contractors aren't plumbers, they aren't electricians.
+
+- But they know a lot of them,
+
+- And they know who does good work!
+
+SELECTING SOFTWARE:
+
+- And this is how you can think about selecting software,
+- And the R Validation Hub, which is a working group w/in the R Consortium, is leading the way here.
+- When you pick an electrician,
+- You want one who is going to check that 
+- the light they installed, turns on when you flip the switch.
+
+R VALIDATION HUB:
+
+- The R Validation Hub will guide you in how to pick the right software...
+- And how to document that, correctly.
+
+
+THE HOUSE IS BUILT! LET'S MOVE IN:
+
+-  No, we need to make sure it's safe
+-  And it's effective at being a house.
+-  Little bit of a stretch there, but we'll make it work :)
+
+REGULATORY AGENCIES:
+
+-  This is no different than us submitting to regulatory agencies.
+-  And the R Consortium has another working group, around submissions,
+-  To guide you in correctly submitting to agencies, 
+-  While using open-source.
+
+TRANSITION:
+
+- And this is how we built our house.  
+- We leaned on the open-source community,  
+- We joined open-source initiatives,
+- We learned from the industry, to overcome challenges.
+
+
+WHY WE BUILT A NEW HOUSE IN THE FIRST PLACE:
+
+- You already had a house.
+- We need to get treatments to patient in need faster.  
+
+NEXT SLIDE
+:::
+
+##  Faster to Patients
+::: columns
+::: {.column width="33%" .fragment}
+### Standards
+![](presentation_files/pharmaverse.png)
+:::
+
+::: {.column width="33%" .fragment}
+### 
+![](presentation_files/cardinal_name.png)
+:::
+
+::: {.column width="33%" .fragment}
+### Interactivity
+![](presentation_files/teal.png)
+:::
+:::
+
+::: notes
+
+No surprise, standards are key to improving efficiency.
+
+PHARMAVERSE:
+
+-  group of people, working to curate packages, specific to pharma
+-  aim to standarize the set of packages regulatory reviewers receive
+-  reviewers see different, and even proprietary packages each review,  opposite of our goal to speed things up
+-  reviewers continue to see the same set of packages, build trust in packages
+-  this will help us save time
+
+TRANSITION:  
+
+-  Going past packages, if we go another step foward
+-  Worry less about how results are formatted on a page, and more about results
+NEXT SLIDE
+
+CARDINAL:
+
+-  "table-generating functions to implement standard FDA Safety Tables"
+-  Reuse code to generate results at an industry level (where you can)
+
+TRANSITION:
+
+-  So, standards can bring efficiencies.
+-  Interactivity can too.
+NEXT SLIDE
+
+
+INTERACTIVITY:
+
+-  Interactive frameworks, like teal, rhino, and golem, provide a standard way to give interactivity to your stakeholders.
+-  This, allows them to answer questions in real time.
+-  Helping to more quickly understand and summarize their findings.
+:::
+
+
+## Been There, Done That, Got the T-Shirt
+
+<br>
+
+> A jocular, sarcastic, or condescending expression of familiarity or boredom with a certain situation or thing.
+
+![](presentation_files/bucket_3.png)
+
+::: footer
+<a href="https://idioms.thefreedictionary.com/Been+there%2c+done+that+got+the+T-shirt">Been there, done that got the T-shirt</a>
+:::
+
+::: notes
+YOU'VE BUILT AN OS TEAM
+
+YOU'VE EXPANDED THE SCOPE OF USE FOR OS TO DEPARTMENTS:
+
+- and successfully used for submission
+
+YOU MIGHT THINK:
+
+-  I've been there done that and I have the t-shirt
+-  When I talk to organizations that you woulld think fall in this bucket,
+-  they don't think they have the t-shirt yet
+:::
+
+
+## There is a lot LEFT to do!
+### People and New Technology{style="color:green;"}
+
+::: columns
+::: {.column width="50%" .fragment }
+![](presentation_files/mark_b.png){width="600" height="400"}
+:::
+
+::: {.column width="50%" .fragment }
+![](presentation_files/erik_n.png){width="600" height="400"}
+:::
+:::
+
+::: notes
+CHANGE MANAGEMENT:
+
+- JUST BECAUSE YOU HAVE THE HOUSE
+- DOESN'T MEAN ANYONE IS GOING TO MOVE IN
+
+MARKS PRESENTATION:
+
+-  How to bring your people with you
+
+NEW TECHNOLOGY / ERIKS TALK:
+
+- WebAssembly
+- Need to stay up to date with new technology
+- As ways to simplify, remove roadblocks
+- we face as an industry.
+
+:::
+
+## There is a lot LEFT to do!
+### Keep R Sustainable{style="color:green;"}
+
+::: {.r-stack}
+
+:::{.fragment .fade-in-then-out style="text-align: center"}
+### Contribute to Your Package Pipeline
+![](presentation_files/logrx.png){width="400" height="400"}
+:::
+
+:::{.fragment .fade-in-then-out style="text-align: center"}
+### Contribute to Core R
+![](presentation_files/strengthen_r.png){width="400" height="400"}
+:::
+
+:::{.fragment .fade-in-then-out style="text-align: center"}
+### Join the R Consortium
+<!-- ![](presentation_files/RConsortium_Vertical_Pantone.png){width="400" height="400"} -->
+![](presentation_files/join_rconsortium.png){width="500" height="400"}
+:::
+
+:::
+
+::: notes
+Contribute to Your Package Pipeline:
+
+-  Story about logrx
+
+Contribute to Core R:
+
+-  Check out STRENGTHNING THE R ECOSYSTEM this afternoon
+-  Including Heather Turners Talk about Contributing to the R Project
+
+Join the R Consortium:
+
+-   Insure infrastructure remains stable.
+-   Set the industry up for long-term success!
+:::
+
+
+<!-- ## There is a lot [LEFT]{style="color:red;"} to do! -->
+## There is a lot LEFT to do!
+### Grow R{style="color:green;"}
+
+::: {.r-stack}
+
+:::{.fragment .fade-in-then-out style="text-align: center"}
+### Share Your Story
+![](presentation_files/posit-conf-logo.svg){width="400" height="400"}
+:::
+
+:::{.fragment .fade-in-then-out style="text-align: center"}
+### Share Your Story
+![](presentation_files/ds_hangout.png){width="600" height="400"}
+:::
+
+:::{.fragment .fade-in-then-out style="text-align: center"}
+### Share Your Story
+![](presentation_files/pharmaverseblog.png){width="400" height="400"}
+:::
+
+:::{.fragment .fade-in-then-out style="text-align: center"}
+### Become an Advocate
+![](presentation_files/advocate.png){width="400" height="450"}
+:::
+
+:::{.fragment .fade-in-then-out style="text-align: center"}
+### Organize & Lead
+<!-- ![](presentation_files/RConsortium_Vertical_Pantone.png){width="400" height="400"} -->
+![](presentation_files/rconsortium_wg.png){width="750" height="400"}
+:::
+
+:::{.fragment .fade-in-then-out style="text-align: center"}
+### Organize & Lead
+<!-- ![](presentation_files/RConsortium_Vertical_Pantone.png){width="400" height="400"} -->
+![](presentation_files/phuse_new_project.png){width="750" height="400"}
+:::
+
+:::
+
+::: notes
+SHARE YOUR STORY:
+
+- Like at Posit Conf   
+- Or more informally at
+  - Data Science Hangout
+  - Pharmaverse Blog
+
+BECOME AN ADVOCATE:
+
+- growing users of your package pipeline helps ensure long-term stability
+
+ORGANIZE & LEAD:
+
+- If you see a gap or roadblock not addressed at industry level,  create a group to sort this out!
+
+R Consortium
+- WG Guidance
+
+PHUSE:
+
+- OS Working group, overseeing OS projects
+- New Project Form
+:::
+
+<!-- ::: notes -->
+<!-- -   Transition Story: It was a hectic day, one of those days when you have a calendar full of tasks to work on, but emails with urgent fires are popping up everywhere. It happened to be captured on video, let's show the clip. -->
+<!-- ::: -->
+
+<!-- ------------------------------------------------------------------------ -->
+
+<!-- {{< video https://www.youtube.com/watch?v=L6a725y0l-0?start=9&end=15 width="100%" height="85%">}} -->
+
+<!-- ::: notes -->
+<!-- -   Continue Story: So I'm going through email after email, problem after problem, and get one from my boss at the time. Hey, Nick, the R Consortium Infrastucture Steering Committee has an opening. They're taking applications, here's a link if you want to apply. -->
+<!-- -   I think, well that's ridiculous and move on to the next fire. Later that day, I'm exhausted, covered in proverbial ash and smelling of smoke, catch my breadth from the flurry of activity and think back to my bosses proposal. -->
+<!-- -   I love to do research, on like, anything. Buying a bike, I'm going to research. A golf bag, research. Shoes, research. My wife picks on me saying I enjoy the research more than actually using the thing I purchase.\ -->
+<!-- -   So I begin my research. What does it mean to be an R Consortium ISC member. I'm reading charters, by-laws, looking at what they fund, why do they exist, who pays for all of this. -->
+<!-- -   At the end of this, I still think it's ridiculous for me to apply, but why not, I'll go for it. -->
+<!-- -   I complete the application, and I nervously submit. -->
+<!-- -   A few days or weeks later, sure enough, the stuff of triumph and of nightmares, I was selected. -->
+<!-- -   I'm instantly full on imposter syndrome. -->
+<!-- -   Leading up to the first meeting, was a lot like my BP chart before. Each day leading up to the event, I can feel the anxiety grow. -->
+<!-- -   My BP spiking as I join the first meeting and see Hadley Wickham sitting there. What have I gotten myself into? -->
+<!-- -   I pushed through that meeting, and continued on working with the team and it's just another thing on the calendar, like when it's time to go to the gym. It's not met with anxiety or BP spikes :) -->
+<!-- -   And I tell you this, for the same reason anyone tells a story about imposter syndrome, you really can do this! And even if you've heard this before, it's always worth hearing again, to remind you. -->
+<!-- -   So I urge you to dive-in, fail alot, become a leader in moving yourself and/or your organization to Open-Source, while remembering to be a good steward in order to maintain stability and success as our industries shifts technologies. -->
+
+<!-- make a move, whichever bucket you might fall in.  Just as ignoring your elevated BP is a recipe for disaster, ignoring the open-source shift in our industry will lead to similar results.  -->
+<!-- ::: -->
+
+------------------------------------------------------------------------
+
+##  {background-color="black" background-image="presentation_files/John_Wooden_with_Bill_Putnam_and_Ducky_Drake.jpeg" background-size="cover" background-opacity="0.3"}
+
+::: {.flushright data-latex=""}
+"Failure isn't fatal, but failure to change might be" <br> - John Wooden
+:::
+
+::: footer
+By Unidentified (Southern Campus is the UCLA yearbook published by UCLA) - 1958 UCLA yearbook, p. 314, <a href="//en.wikipedia.org/wiki/File:John_Wooden_with_Bill_Putnam_and_Ducky_Drake.jpeg" title="Public domain in the United States">PD-US</a>, <a href="https://en.wikipedia.org/w/index.php?curid=62972010">Link</a>
+:::
+
+::: notes
+So the end of the story, I'm still waking up at 5 am and working out, for clsoe to a year now.
+
+My blood-pressure is way down and I'm in great health.
+
+And the analogy seems stronger than ever, you have to change in order to survive.
+
+So I hope you find a reason to make a change,
+
+Just dive in,
+
+become a leader in moving your organization to Open-Source, 
+
+remembering there are many people to help you along your journey,
+
+and remembering to be good stewards of Open-Source
+
+to maintain stability and ensure success, as our industry
+
+adopts Open-Source to get treatments 
+
+to patients in need, in time.
+
+Thank you.
+:::
